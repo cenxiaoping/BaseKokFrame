@@ -51,7 +51,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
         }
 
         //默认设置信号栏字体颜色为黑色
-        setTopBarTextMode(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        setTopBarTextMode(View.SYSTEM_UI_FLAG_VISIBLE);
     }
 
     /**

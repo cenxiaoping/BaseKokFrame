@@ -5,6 +5,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import com.example.basekokframe.utils.FullLifecycleObserverIml;
 import com.kok.base.BaseActivity;
 import com.kok.base.BaseView;
 
@@ -13,6 +14,8 @@ public abstract class KokBaseActivity<P extends KokBasePresenter> extends BaseAc
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getLifecycle().addObserver(new FullLifecycleObserverIml());
 
         //设置setContentView
         if (setLayoutId() != 0) {
