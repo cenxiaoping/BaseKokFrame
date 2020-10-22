@@ -56,7 +56,7 @@ public class LoginActivity extends KokBaseActivity<LoginPresenter> implements Lo
             public void onClick(View v) {
 //                mPresenter.login();
 //                currentName.postValue("123456");
-                startActivity(ViewPager2Activity.class);
+                startActivity(RecyclerViewActivity.class);
             }
         });
     }
